@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    background: #ff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     margin-top: 1.3em;
+    text-decoration: underline;
 }
 
 b, strong {
@@ -34,7 +34,7 @@ samp {
     display: none;
 }
 
-img {
+.wallpaper {
 /*    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;*/
     background: transparent;
     border: 15px solid rgba(0, 0, 0, 0.12);
@@ -64,26 +64,159 @@ img {
 .header_links:link {
     color: #000;
 /*    border: 2px solid;*/
-    padding: 12%;
-    padding-right: 10px;
+/*    padding: 12%;*/
+    padding-right: 15%;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 5%;
     display: inline-block 2px;
+    display: table-cell;
+    height: 50px;
+    content: center;
 /*    border-top-left-radius: 10px;*/
 /*    border-bottom-right-radius: 10px;*/
 }
 .header_links:hover {
-    color: #afa;
+    color: #ada;
+    background: #aaa;
 }
 .header_links:visited {
     color: #000;
     border: 2px solid;
-    padding: 5px;
+/*    padding: 5px;*/
     padding-right: 10px;
     padding-left: 10px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+/*    border-top-left-radius: 50px;*/
+/*    border-bottom-right-radius: 50px;*/
 }
 .header_links:active {
     color: black;
+}
+
+td {
+ text-align: center;
+ width: 8%;
+}
+
+#logo {
+    vertical-align: left;
+/*    max-width = 80px;*/
+    max-height: 100px;
+    position: relative;
+/*    display: table-cell;*/
+}
+
+.header_links {
+/*    align-self:  center;*/
+/*    position: relative; */
+/*    line-height: 100px;*/
+}
+
+#header {
+    display: table;
+}
+
+
+
+.gp {
+    
+}
+
+.w {
+    background: #0a0;
+    opacity: 0.8;
+    color: white;
+    width:8%;
+}
+
+.l {
+    background: #a00;
+    color: white;
+    opacity:0.8;
+    width: 8%;
+}
+
+.t {
+    background:#00a;
+    color:white;
+    opacity:0.8 ;
+    width: 8%;
+}
+
+tr {
+    background: #333;
+    color: white;
+/*    width: 85%;*/
+}
+
+#standings {
+    background: black;
+    color: white;
+    column-width: 8%;
+/*    width: 95%;*/
+}
+
+.pts {
+    color: white;
+    background: #ffc40f;
+    opacity: 0.8;
+}
+
+.team {
+    width: 10%;
+}
+
+table {
+    padding: 10px;
+    width: 100%;
+/*    vertical-align: center;*/
+}
+
+.game {
+    width:;
+}
+
+#game_head {
+    background: black;
+}
+
+.space {
+    width: 5%;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.preinput {
+    display: inline;
+    padding-right: 2%;
+}
+
+input {
+    width: 100%;
+    background:#eee;
+/*    align-content: right;*/
+}
+
+.icon {
+/*    width: 10%;*/
+    max-width:8%;
+    
+}
+
+li {
+    padding-bottom: 3%;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.submit {
+    background: #aaa; 
+/*    color: #000 ;*/
+    border-radius: 5px;
 }

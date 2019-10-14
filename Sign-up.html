@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MAA</title>
+        <link rel="stylesheet" href="mainLeague.css">
+    </head>
+    <body>
+        <script>
+        function submit(){
+            alert("Thank you for registering!\n You will receive an email telling you what to do next.");
+//           return getData();
+        }
+        </script>
+        <img id='logo' src="Logo.png">
+        <div id = "header">
+            <a class = "header_links" href="League.html">Home</a>
+            <a class = "header_links" href="Schedule&Standings.html"><img class="icon" src="standingsicon.png"/></a>
+            <a class = "header_links" href="">Register</a>
+            <a class = "header_links" href="">About</a>
+            <a class = "header_links" href="">Contact</a>
+        </div>
+        <img class='wallpaper' src="cover.jpg">
+        
+        <form>
+            <ul>
+                <h2>Team registration</h2>
+                <p>
+                    Notice: Each team must contain atleast 7 players. The maximum for each team is currently held at 10 players. Each team must have a captain who registers their team. The captain will then receive a passcode containing 6 characters. Each player on the team must then register using this passcode in order to play for that team. Please see the <a href="rules.html">team</a> rules and regulations before proceeding.
+                </p>
+                
+                <li><p class="preinput">Team Name: </p><input type="text" name="username" /></li>
+                
+                <li><p class="preinput"> Number of players: </p><input type="number" value="7" max="10" min="7" /></li>
+                
+                <li><p class="preinput">Team Captain: </p><input type="text" name="username" /></li>
+                
+                <li><p class="preinput">Email: </p><input type="email" name="username" /></li>
+                
+                <li>
+                Payment Method:
+                <select>
+                    <option>Paypal</option>
+                    <option>Credit Card (online)</option>
+                    <option>Cash (in person)</option>
+                </select>
+                </li>
+            
+                <li> <button class="submit" name="register">Register this team</button> </li>
+                
+            </ul>
+            
+        </form>
+        
+        <form>    
+            <ul>
+                <h2>Player Registration</h2>
+                
+                <p>
+                    Notice: If you have not already read the above notice, please read it before you continue. Each player may only register and play on one team. Once a player has stepped onto the field of play for a team, they may no longer play for another team. Any teams caught with a player who is not registered on their team will be penalized. Once a captain creates a team, the captain will not need to register as a player since this will be done automatically. Please see the <a href="rules.html">player</a> rules and regulations before proceeding.
+                </p>
+                
+                <li><p class="preinput">First Name: </p><input type="text" name="firstname" /></li>
+                
+                <li><p class="preinput">Last Name: </p><input type="text" name="lastname"/></li>
+                
+<!--                <li><p class="preinput">Last Name: </p><input type="text" name="email" /></li>-->
+                
+                <li><p class="preinput">Email: </p><input type="email" name="email" /></li>
+                
+                <li> <button class="submit" name="playersubmit" type="button" onclick="getData()">Register this player</button> </li>
+            
+            </ul>        
+        </form>
+        
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
