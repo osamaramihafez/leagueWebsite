@@ -8,20 +8,30 @@
         <link rel="stylesheet" href="mainLeague.css">
     </head>
     <body>
+        
+
+        <h1>  <img id='logo' src="Logo.png">
+        Registration Page
+        </h1>
+        <break>
+        </break>
+         <ul class = "a">
+          <li class = "b"><a class="active" href="index.html">Home</a></li>
+          <li class = "b"><a href="contact.html">Contact</a></li>
+          <li class = "b"><a href="about.html">About</a></li>
+          <li class = "b"><a href="Schedule&Standings.html">Schedule & Standings </a></li>
+          <li class = "b"><a href="Sign-up.html"> Register</a></li>
+
+        </ul>
+            
         <script>
         function submit(){
             alert("Thank you for registering!\n You will receive an email telling you what to do next.");
 //           return getData();
         }
         </script>
-        <img id='logo' src="Logo.png">
-        <div id = "header">
-            <a class = "header_links" href="League.html">Home</a>
-            <a class = "header_links" href="Schedule&Standings.html"><img class="icon" src="standingsicon.png"/></a>
-            <a class = "header_links" href="">Register</a>
-            <a class = "header_links" href="">About</a>
-            <a class = "header_links" href="">Contact</a>
-        </div>
+       
+        
         <img class='wallpaper' src="cover.jpg">
         
         <form>
@@ -33,19 +43,19 @@
                 
                 <li><p class="preinput">Team Name: </p><input type="text" name="username" /></li>
                 
-                <li><p class="preinput"> Number of players: </p><input type="number" value="7" max="10" min="7" /></li>
+                <li><p class="preinput"> Number of players: </p><input type="number" name = "players" value="7" max="10" min="7" /></li>
                 
-                <li><p class="preinput">Team Captain: </p><input type="text" name="username" /></li>
+                <li><p class="preinput">Team Captain: </p><input type="text" name="captain" /></li>
                 
-                <li><p class="preinput">Email: </p><input type="email" name="username" /></li>
+                <li><p class="preinput">Email: </p><input type="email" name="email2" /></li>
                 
                 <li>
                 Payment Method:
                 <select>
-                    <option>Paypal</option>
-                    <option>Credit Card (online)</option>
-                    <option>Cash (in person)</option>
-                </select>
+                        <option>Paypal</option>
+                        <option>Credit Card (online)</option>
+                        <option>Cash (in person)</option>
+        </select>
                 </li>
             
                 <li> <button class="submit" name="register">Register this team</button> </li>
