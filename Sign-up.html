@@ -16,15 +16,15 @@
         <break>
         </break>
          <ul class = "a">
-          <li class = "b"><a class="active" href="index.html">Home</a></li>
+          <li class = "b"><a href="index.html">Home</a></li>
           <li class = "b"><a href="contact.html">Contact</a></li>
           <li class = "b"><a href="about.html">About</a></li>
-          <li class = "b"><a href="Schedule&Standings.html">Schedule & Standings </a></li>
-          <li class = "b"><a href="Sign-up.html"> Register</a></li>
-
+          <li class = "b"><a href="Schedule&Standings.html">Schedule/Standings </a></li>
+          <li class = "b"><a class="active" href="Sign-up.html"> Register</a></li>
         </ul>
             
         <script>
+        document.getElementById("submit").addEventListener("click", )
         function submit(){
             alert("Thank you for registering!\n You will receive an email telling you what to do next.");
 //           return getData();
@@ -58,7 +58,7 @@
         </select>
                 </li>
             
-                <li> <button class="submit" name="register">Register this team</button> </li>
+                <li> <input type="button" class="submit" name="register" onclick="submit()" value="Register this team"/> </li>
                 
             </ul>
             
@@ -80,7 +80,7 @@
                 
                 <li><p class="preinput">Email: </p><input type="email" name="email" /></li>
                 
-                <li> <button class="submit" name="playersubmit" type="button" onclick="getData()">Register this player</button> </li>
+                <li> <input type="button" class="submit" name="playersubmit" type="button" onclick="submit()" value="Register this player"/> </li>
             
             </ul>        
         </form>

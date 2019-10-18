@@ -228,9 +228,9 @@ a {
     
 
 ul.a {
-     list-style-type: none;
+  list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 1;
   overflow: hidden;
   background-color: #333;
     
@@ -256,5 +256,11 @@ li a:hover:not(.active) {
   background-color: #4CAF50;
 }
 
+
+
+
+.b {
+    padding-bottom: 0;
+}
 
 
