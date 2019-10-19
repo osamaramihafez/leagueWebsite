@@ -29,6 +29,12 @@
             alert("Thank you for registering!\n You will receive an email telling you what to do next.");
 //           return getData();
         }
+         
+
+        function register() {
+          alert(" An email has been forwarded to your inbox");
+        }
+        
         </script>
        
         
@@ -58,11 +64,20 @@
         </select>
                 </li>
             
-                <li> <input type="button" class="submit" name="register" onclick="submit()" value="Register this team"/> </li>
+                <li> <button onclick="register()">Register</button> </li>
                 
             </ul>
+        
+    
             
         </form>
+        
+        <br> 
+        <br>   
+        <br>   
+        <br>   
+        <br>   
+        <br>   
         
         <form>    
             <ul>
@@ -80,8 +95,12 @@
                 
                 <li><p class="preinput">Email: </p><input type="email" name="email" /></li>
                 
-                <li> <input type="button" class="submit" name="playersubmit" type="button" onclick="submit()" value="Register this player"/> </li>
-            
+<!--                <li> <input type="button" class="submit" name="playersubmit" type="button" onclick="submit()" value="Register this player"/> </li>-->
+                
+                <li>
+                <button onclick="register()">Register Player</button>
+                </li>
+                
             </ul>        
         </form>
         
