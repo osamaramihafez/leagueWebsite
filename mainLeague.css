@@ -5,6 +5,9 @@ html {
     background-image: url(111.jpg);
     -webkit-font-smoothing: antialiased;
     background-attachment: fixed;
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+    background-size: cover;
     
 }
 
@@ -16,7 +19,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 70%;
     padding: 2em 2em 4em;
     background: rgba(0,0,0,0.75);
 }
@@ -482,7 +485,8 @@ input:focus, textarea:focus {
     padding-top: 1%;
     padding-bottom: 1%;
     font-weight: bold;
-    background();
+    text-align: justify;
+/*    text-justify: inherit;*/
 }
 
 #info {
@@ -490,12 +494,12 @@ input:focus, textarea:focus {
 }
 
 #form-div-player {
-    background: rgba(0,0,0,0.3);
-    border-top: groove 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+/*    background: rgba(0,0,0,0.3);*/
+/*    border-top: groove 20px;*/
+/*    border-top-left-radius: 20px;*/
+/*    border-top-right-radius: 20px;*/
 /*    padding-right: 10%;*/
-    margin-top: 10%;
+/*    margin-top: 5%;*/
 }
 
 .submitbutton:hover {
@@ -508,3 +512,8 @@ input:focus, textarea:focus {
 
 
 
+
+.table_head {
+    column-span: 10;
+    background: black;
+}
