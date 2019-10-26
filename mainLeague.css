@@ -138,21 +138,24 @@ td {
 }
 
 .w {
-    background: #0a0;
+/*    background: #0a0;*/
+    background: rgba(0, 100, 0);
     opacity: 0.8;
     color: white;
     width:8%;
 }
 
 .l {
-    background: #a00;
+/*    background: #a00;*/
+    background: rgba(100,0,0);
     color: white;
     opacity:0.8;
     width: 8%;
 }
 
 .t {
-    background:#00a;
+/*    background:#00a;*/
+    background: rgba(0,0,100);
     color:white;
     opacity:0.8 ;
     width: 8%;
@@ -173,7 +176,8 @@ tr {
 
 .pts {
     color: white;
-    background: #ffc40f;
+    background: rgba(0,100, 100, 0.5);
+/*    background: #ffc40f;*/
     opacity: 0.8;
 }
 
@@ -516,4 +520,16 @@ input:focus, textarea:focus {
 .table_head {
     column-span: 10;
     background: black;
+}
+
+.knocked_out {
+    background: rgba(100,0,0,0.2);
+}
+
+.auto_semi {
+    background: rgba(0,100,0, 0.2);
+}
+
+.date {
+    width:30%;
 }
