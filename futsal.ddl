@@ -15,34 +15,34 @@ create table if not exists team (
 );
 
 create table if not exists schedule (
-  game_time Datetime;
+  game_time Datetime,
   home_team varchar(20),
   away_team varchar(20),
   home_score int,
   away_score int,
-  game_type varchar(15), --Is this needed?
+  game_type varchar(15), -- do we need this?
   constraint gt_pk primary key (game_time),
-  constraint ht_fk foreign key home_team,
-  constraint at_fk foreign key away_team
+  constraint ht_fk foreign key (home_team) references team(team_name),
+  constraint at_fk foreign key (away_team) references team(team_name)
 );
 
 -- Add triggers to update the tables.
 
-delimiter $$
-
-CREATE TRIGGER autoEnroll AFTER UPDATE ON schedule
-    FOR EACH ROW
-        BEGIN
-        	DECLARE allCourses int;
-
-   			-- Find each course where the student isn't enrolled.
-   			SELECT cid FROM Course INTO allCourses;
-
-            INSERT INTO Enrolled(sid, cid, gpa) VALUES(NEW.sid, allCourses, 0.0);
-        END;
-
-$$
-delimiter ;
+-- delimiter $$
+--
+-- CREATE TRIGGER autoEnroll AFTER UPDATE ON schedule
+--     FOR EACH ROW
+--         BEGIN
+--         	DECLARE allCourses int;
+--
+--    			-- Find each course where the student isn't enrolled.
+--    			SELECT cid FROM Course INTO allCourses;
+--
+--             INSERT INTO Enrolled(sid, cid, gpa) VALUES(NEW.sid, allCourses, 0.0);
+--         END;
+--
+-- $$
+-- delimiter ;
 
 -- I want to create a few triggers:
---  1. 
+--  1.
