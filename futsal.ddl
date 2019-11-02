@@ -20,7 +20,7 @@ create table if not exists schedule (
   away_team varchar(20),
   home_score int,
   away_score int,
-  game_type varchar(15),
+  game_type varchar(15), -- do we need this?
   constraint gt_pk primary key (game_time),
   constraint ht_fk foreign key (home_team) references team(team_name),
   constraint at_fk foreign key (away_team) references team(team_name)
