@@ -4,14 +4,14 @@ html {
 /*    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);*/
     background-image: url(images/111.jpg);
 /*    background-image: url(images/Futsalbythenums.png), url(images/TheNumbers.png);*/
-/*    background-position: bottom, center;*/
+    background-position: right, left;
     background-color: black;
     -webkit-font-smoothing: antialiased;
     background-attachment: fixed;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-size: auto;*/
 /*    background-size: contain;*/
-/*    background-size: cover;*/
+    background-size: cover;
 /*    height: 100%;*/
     
 }
@@ -19,15 +19,16 @@ html {
 body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
 /*    color: #545454;*/
-    color: rgba(251, 243, 243, 0.8); 
+    color: rgba(251, 243, 243, 0.9); 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 70%;
+/*    max-width: 70%;*/
     padding: 2em 2em 4em;
-    background: rgba(0,0,0,0.9);
+/*    background: rgba(212,175,105,0.6);*/
 /*    background: rgba(250,250,250,0.9);*/
+    background: rgba(0,0,0,0.8);
     height: 100%;
 /*    border-right: 2px;*/
 /*    border: solid;*/
@@ -141,8 +142,10 @@ samp {
 }
 
 td {
- text-align: center;
- width: 8%;
+    text-align: center;
+    width: 8%;
+/*    border: white 1px;*/
+/*    border-style: groove;*/
 }
 
 #logo {
@@ -165,7 +168,7 @@ td {
 
 .w {
 /*    background: #0a0;*/
-    background: rgba(0, 100, 0, 1);
+    background: rgba(0, 100, 0, 0.2);
     opacity: 0.8;
     color: white;
     width:8%;
@@ -182,7 +185,7 @@ td {
 
 .l {
 /*    background: #a00;*/
-    background: rgba(100,0,0,1);
+    background: rgba(100,0,0,0.2);
     color: white;
     opacity:0.8;
     width: 8%;
@@ -199,7 +202,7 @@ td {
 
 .t {
 /*    background:#00a;*/
-    background: rgba(0,0,100,1);
+    background: rgba(0,0,100,0.2);
     color:white;
     opacity:0.8 ;
     width: 8%;
@@ -215,7 +218,8 @@ td {
 }
 
 tr {
-    background: #333;
+/*    background: #333;*/
+    background: rgba(100,100,100,0.5);
     color: white;
 /*    width: 100%;*/
 }
@@ -229,7 +233,7 @@ tr {
 
 .pts {
     color: white;
-    background: rgba(0,100, 100, 0.5);
+    background: rgba(0,100, 100, 0.2);
 /*    background: #ffc40f;*/
     opacity: 0.8;
 }
@@ -241,6 +245,11 @@ tr {
 table {
     padding: 10px;
     width: 100%;
+/*    background: rgba(100, 50, 50, 0.5);*/
+    padding: 1%;
+    margin-top: 1%;
+/*    border: white 5px;*/
+/*    border-style: groove;*/
 /*    vertical-align: center;*/
 }
 
@@ -573,6 +582,9 @@ input:focus, textarea:focus {
 .table_head {
 /*    column-span: 10;*/
     background: black;
+    border-bottom: 2px;
+/*    padding-top: 1%;*/
+    border-bottom-style: groove;
 }
 
 .knocked_out {
@@ -750,4 +762,20 @@ ul.a   : hover {
 /*    border-color: aqua;*/
 /*    padding-right: 20%;*/
 /*    padding-left: 20%;*/
+}
+
+th {
+/*    border-right: none;*/
+/*
+    border-right: 0px;
+    border-left: 0px;
+*/
+    border-spacing: 0;
+/*    border-style: solid;*/
+}
+
+.sched {
+/*    width: 90%;*/
+/*    border-bottom: rgba(36, 154, 209, 0.8);*/
+/*    border-bottom-style: ridge;*/
 }
