@@ -496,7 +496,7 @@ input:focus, textarea:focus {
 /*	border:#fbfbfb solid 1px;*/
 	cursor:pointer;
 	background-color: rgba(150,150,150,0.2);
-	color: rgb(251, 243, 243, 0.7);
+	color: rgba(251, 243, 243, 0.7);
 	font-size:200%;
 	padding-top:2%;
 	padding-bottom:2%;
@@ -570,7 +570,7 @@ input:focus, textarea:focus {
 
 .submitbutton:hover {
     background-color: rgba(200,200,200,0.2);
-	color: rgb(251, 243, 243, 0.5);
+	color: rgba(251, 243, 243, 0.5);
 }
 
 
