@@ -19,31 +19,31 @@
          <ul class = "a">
           <li class = "b"><a href="index.html">Home</a></li>
           <li class = "b"><a href="about.html">About</a></li>
-          <li class = "b"><a href="Schedule&Standings.html">Schedule & Standings </a></li>
+          <li class = "b"><a href="Schedule&Standings.html">Schedule/Standings </a></li>
           <li class = "b"><a href="Sign-up.html"> Register</a></li>
           <li class = "b"><a class="active" href="contact.html">Contact</a></li>
-          <li class = "b"><a href="about.html">Initiatives</a></li>
+
 
         </ul>
             
         
         
 <!--        <img class='wallpaper' src="cover.jpg">-->
-        <div id="contact_page">
+<!--        <div id="contact_page">-->
         <p>
         If you have any questions, comments, or concerns feel free to let us know by filling in the text box below along with all of the required information, then clicking submit.
         </p>
         
+<!--        <div id="condiv">-->
             
         <form id="contact">
-<!--        Full Name<br>-->
         <input id="Name" type="text" placeholder="Full Name">
-<!--        Email (This is how we will get in contact with you)<br>-->
         <input id="Email" type="text" placeholder="Email">
-        <input id="contactus" type="text" placeholder="Questions, comments or concerns go here">
-        <input id="submit" type="button" text="submit">
+<!--        <textarea id="data" style="width: 757px; height: 170px" rows="10" cols="80" placeholder="Questions, Comments, Concerns go here"></textarea>-->
+        <input id="submit" type="button" value="Submit">
         </form>
         
+<!--        </div>-->
         
     </body>
 </html>
