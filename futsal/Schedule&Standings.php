@@ -25,37 +25,25 @@
         </center>
 
 <script>
-
-
-    function containString(x, y){
-        var i = 0;
-        // var f = x.toString();
-        // var s = y.toString();
-        var l = x.length;
-//        console.log(f);
-        for (; i < l ; i++){
-          try{
-            if (y[i] == x[0] && y.slice(i+1, l+i) == x){
-              return true;
-            }
-          }
-          catch(RangeError){
-            console.log('error my dude');
-          }
-
-        }
-        console.log(x);
-        console.log(y);
-        return false;
+    
+    var disp;    
+    
+    function hide(){
+        var schedule = document.getElementById("schedule");
+        disp = schedule.style.display;
+        console.log(disp);
+        schedule.style.display = "none";
     }
     
     function resetSched(){
         var schedule = document.getElementById("schedule");
         var i = 0;
+        console.log(disp);
+        schedule.style.display = "";
         for (;i<schedule.rows.length; i++){
-            schedule.rows[i].style.display = "inherit";
+            schedule.rows[i].style.display = "";
         }
-        console.log("showing table");
+        console.log("showing table");   
     }
 
     function selectTeam(team){
@@ -105,6 +93,7 @@
 <!--        <input class="team_button" onClick="selectTeam(this.value)" type="button" value="ahgsdvahgsvdhasvg"/>-->
 <!--    <div id="everything">-->
 <!--    <table id="schedule">-->
+        
 <?php
 
     $team1 = "Joga Bonito";
@@ -233,7 +222,8 @@
      </tr>
  </table>
 
-    <input type="button" id="fullsched" value="See full schedule" onClick="resetSched()" />
+    <input type="button" id="hidesched" value="See full schedule" onClick="resetSched()" />
+<!--    <input type="button" id="fullsched" value="hide sched" onClick="hide()" /> -->
 
  <table id="schedule"><tbody>
      <th class="table_head" colspan="8">Schedule</th>
