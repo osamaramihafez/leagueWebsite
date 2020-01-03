@@ -6,12 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>MAA - Schedule and Standings</title>
         <link rel="stylesheet" href="../futsal/mainLeague.css">
+        
     </head>
     <body>
 
 <!--        <img id=logo src="images/Logo.jpg">-->
         <center>
-         <ul class = "a">
+        <img src="images/MAAlogo.png" id="Logo">
+        <ul class = "a">
 <!--          <li class = "b"><a href="index.html">Home</a></li>-->
 <!--          <li class = "b"><a href="about.html">About</a></li>-->
           <li class = "b sched"><a class="active" href="Schedule&Standings.php">Schedule/Standings</a></li>
@@ -26,7 +28,7 @@
 
 <script>
     
-    var disp;    
+//    var disp;    
     
     function hide(){
         var schedule = document.getElementById("schedule");
@@ -38,7 +40,7 @@
     function resetSched(){
         var schedule = document.getElementById("schedule");
         var i = 0;
-        console.log(disp);
+//        console.log(disp);
         schedule.style.display = "";
         for (;i<schedule.rows.length; i++){
             schedule.rows[i].style.display = "";
@@ -96,14 +98,24 @@
         
 <?php
 
-    $team1 = "Joga Bonito";
-    $team2 = "adasasdasd";
-    $team3 = "qwertyuiop";
-    $team4 = "hghghghghg";
-    $team5 = "Asdasdasdasdasdasdasdas";
-    $team6 = "Team 6";
-    $team7 = "Team 7";
-    $team8 = "Team 8";
+//mysql_connect();
+        
+    $team1 = "Roma";
+    $team2 = "Liverpool";
+    $team3 = "Tolba";
+    $team4 = "Eagles";
+    $team5 = "Ricks";
+    $team6 = "Regala";
+    $team7 = "Dream";
+    $team8 = "Brothers FC";
+    $team9 = "Yemeni Team";
+    $team10 = "Joga Bonito FC";
+    $team11 = "Babylon";
+    $team12 = "ISNA's Team";
+    $team13 = "North Africa FC";
+    $team14 = "Refai's Team";
+    $team15 = "Yemeni Team 2";
+    $team16 = "Random FC";
 
  echo '
  <center>
@@ -113,7 +125,7 @@
      Standings
      </th>
      <tr id="standings">
-         <th class="team">Team</th>
+         <th class="Team">Team</th>
          <th class="gp">GP</th>
          <th>PTS</th>
          <th >W</th>
@@ -125,7 +137,7 @@
          <th class="wp">WP</th>
      </tr>
      <tr>
-         <td class="teams auto_semi"> <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team1 ; echo '"/> </td>
+         <td class="teams team"> <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team1 ; echo '"/> </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -137,7 +149,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams auto_semi">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value=" '; echo $team2 ; echo '"/> </td>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value=" '; echo $team2 ; echo '"/> </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -197,7 +209,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams knocked_out">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team7 ; echo '"/>  </td>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team7 ; echo '"/>  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -209,7 +221,103 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams knocked_out">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team8 ; echo '"/>  </td>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team8 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team9 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team10 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team11 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team12 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team13 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team14 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team15 ; echo '"/>  </td>
+         <td class="gp">0</td>
+         <td class="pts">0</td>
+         <td class="w">0</td>
+         <td class="l">0</td>
+         <td class="t">0</td>
+         <td class="gf">0</td>
+         <td class="ga">0</td>
+         <td class="gd">0</td>
+         <td class="wp">0.00</td>
+     </tr>
+     <tr>
+         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team16 ; echo '"/>  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -264,12 +372,13 @@
      <tr><td>TBD</td><td>  '; echo $team2 ; echo ' </td><td class="home_score"></td><td>-</td><td class="away_score"></td><td>  '; echo $team3 ; echo '  </td><td>TBD</td><td>Regular</td></tr>
      <tr><td>TBD</td><td>  '; echo $team5 ; echo '  </td><td class="home_score"></td><td>-</td><td class="away_score"></td><td>  '; echo $team8 ; echo '  </td><td>TBD</td><td>Regular</td></tr>
      <tr><td>TBD</td><td>  '; echo $team6 ; echo '  </td><td class="home_score"></td><td>-</td><td class="away_score"></td><td>  '; echo $team7 ; echo '  </td><td>TBD</td><td>Regular</td></tr>
-     <th class="week_head" colspan="8">Week 8 Playoffs</th>
+<!--     <th class="week_head" colspan="8">Week 8 Playoffs</th>
      <tr><td>TBD</td><td>3rd</td><td class="home_score"></td><td>-</td><td class="away_score"><td>6th</td><td>TBD</td><td>Postseason-QF 1</td></tr>
      <tr><td>TBD</td><td>4th</td><td class="home_score"></td><td>-</td><td class="away_score"><td>5th</td><td>TBD</td><td>Postseason-QF 2</td></tr>
      <tr><td>TBD</td><td>2nd</td><td class="home_score"></td><td>-</td><td class="away_score"><td>Winner of QF2</td><td>TBD</td><td>Postseason-SF 1</td></tr>
      <tr><td>TBD</td><td>1st</td><td class="home_score"></td><td>-</td><td class="away_score"><td>Winner of QF1</td><td>TBD</td><td>Postseason-SF 2</td></tr>
      <tr><td>TBD</td><td>Winner of SF1</td><td class="home_score"></td><td>-</td><td class="away_score"><td>Winner of SF2</td><td>TBD</td><td>Postseason-Final</td></tr>
+-->
  </tbody></table>
 </div>
 </center>

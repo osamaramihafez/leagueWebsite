@@ -242,6 +242,7 @@ tr {
 
 .team {
     width: 10%;
+/*    background: rgba(0,0,100,0.2);*/
 }
 
 table {
@@ -856,3 +857,9 @@ th {
 
 
 
+
+#Logo {
+    width: 20%;
+    margin-bottom: -5%;
+    margin-top: -5%;
+}

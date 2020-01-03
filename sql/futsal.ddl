@@ -43,46 +43,6 @@ insert into team (name, position, games_played, goals_for, goals_against, goal_d
 
 select * from team order by position;
 
-
-
-
---Triggers
-
---    Adjust the table based on points:
---    1) When a match has been completed, then the score has been updates.
---        Note: there are 8*4 + 1 = 33 matches in total
---    2) Based on the score from the most recently updated match
---      i) update the
-
-
-delimiter $$
-CREATE TRIGGER update_teams AFTER UPDATE ON match
-        BEGIN
-        if new.home_score > new.away_score
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, wins = wins + 1, games_played = games_played + 1
-            where t.name = match.home_team;
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, losses = losses + 1, games_played = games_played + 1
-            where t.name = match.away_team;
-        else if new.home_score < new.away_score
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, losses = losses + 1, games_played = games_played + 1
-            where t.name = match.home_team;
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, wins = wins + 1, games_played = games_played + 1
-            where t.name = match.away_team;
-        else
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, ties = ties + 1, games_played = games_played + 1
-            where t.name = match.home_team;
-          update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
-            goal_differential = goals_for - goals_against, ties = ties + 1, games_played = games_played + 1
-            where t.name = match.away_team;
-        END$$
-delimiter ;
-
-
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-01-04 18:00','Joga Bonito','0','0','Benchwarmers','Regular');
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-01-04 19:00' ,'Inter Galactico','0','0','Saracens','Regular');
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-01-04 20:00','Atleti','0','0','HeardThereWasPizza','Regular');
@@ -116,3 +76,40 @@ INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-02-22 20:00', Null,'0','0', Null, 'Postseason-SF 1');
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-02-22 21:00', Null,'0','0', Null, 'Postseason-SF 2');
 INSERT INTO game (game_time, home_team, home_score, away_score, away_team, game_type) VALUES ('2020-02-22 22:00', Null,'0','0', Null, 'Postseason-Final');
+
+delimiter $$
+CREATE TRIGGER update_teams AFTER UPDATE ON game
+  begin
+    if (new.home_score > new.away_score)
+    begin
+      update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+        goal_differential = goals_for - goals_against, wins = wins + 1, games_played = games_played + 1
+        where t.name = new.home_team;
+      update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+        goal_differential = goals_for - goals_against, losses = losses + 1, games_played = games_played + 1
+        where t.name = new.away_team;
+    end
+    else
+    begin
+      if (new.home_score < new.away_score)
+      begin
+        update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+          goal_differential = goals_for - goals_against, losses = losses + 1, games_played = games_played + 1
+          where t.name = new.home_team;
+        update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+          goal_differential = goals_for - goals_against, wins = wins + 1, games_played = games_played + 1
+          where t.name = new.away_team;
+      end
+    else
+    begin
+      update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+        goal_differential = goals_for - goals_against, ties = ties + 1, games_played = games_played + 1
+        where t.name = new.home_team;
+      update team t set  goals_for = goals_for + NEW.home_score, goals_against = goals_against + NEW.away_score,
+        goal_differential = goals_for - goals_against, ties = ties + 1, games_played = games_played + 1
+        where t.name = new.away_team;
+
+    end
+    end
+  end$$
+delimiter ;
