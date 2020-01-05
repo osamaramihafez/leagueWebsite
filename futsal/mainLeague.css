@@ -59,15 +59,27 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #999;
+    color: rgba(200, 200, 200, 1);
     font-weight: 600;
     line-height: 1.3;
+/*    text-decoration: underline;*/
+/*    margin-left: 20%;*/
 }
 
 h3 {
     font-family: 'Orbitron';
     font-size: 35px;
+    margin-left: 5%;
+/*    text-decoration: underline;*/
 /*    padding-top: 85px;*/
+/*
+    border-bottom: 1px;
+    border-color: rgba(0,0,0,0.9);
+    border-style: groove;
+*/
+/*    padding-right: 2%;*/
+    color: rgba(220, 220, 220, 1);
+    margin-bottom: 0%;
 }
 
 h2 {
@@ -268,7 +280,7 @@ table {
     width: 5%;
 }
 
-ul {
+.a {
     padding-left: 0;
     list-style: none;
 }
@@ -292,7 +304,7 @@ input {
     
 }
 
-li {
+li.a {
     padding-bottom: 3%;
 }
 
@@ -320,14 +332,11 @@ ul.a {
   padding: 1;
   overflow: hidden;
   background-color: rgba(36, 154, 209, 0.8);
-  width: 85%;
-}
-
-li {
-  float: left;
+  width: 100%;
 }
 
 li a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -860,6 +869,50 @@ th {
 
 #Logo {
     width: 20%;
+    height: 10%;
     margin-bottom: -5%;
     margin-top: -5%;
+}
+
+
+
+
+
+#infopg {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    color: #999;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-left: 1%;
+    margin-top: -2%;
+    font-size: 25px;
+}
+
+.infocat {
+    margin-top: 2%;
+    border-style: groove;
+    border-radius: 10%;
+    background: rgba(200,200,200,0.5);
+}
+
+.infocat.ul {
+    list-style: armenian;
+}
+
+li {
+    color: rgba(0,0,0, 1);
+}
+
+
+
+#infolist {
+    margin-left: 3%;
+}
+
+#welcome {
+    margin-top: -1%;
 }
