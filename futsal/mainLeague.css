@@ -2,9 +2,9 @@ html {
 /*    background: #e6e9e9;*/
 /*    background:;*/
 /*    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);*/
-/*    background-image: url(images/111.jpg);*/
+    background-image: url(images/Poster_no_info.jpg);
 /*    background-image: url(images/Futsalbythenums.png), url(images/TheNumbers.png);*/
-    background-position: right, left;
+    background-position: center;
     background-color: white;
     -webkit-font-smoothing: antialiased;
     background-attachment: fixed;
@@ -30,6 +30,7 @@ body {
 /*    background: rgba(250,250,250,0.9);*/
     background: rgba(0,0,0,0.7);
     height: 100%;
+/*    min-height: 100%;*/
 /*    border-right: 2px;*/
 /*    border: solid;*/
 /*    border-color: gold;*/
@@ -55,7 +56,6 @@ body {
 	/* Opera 9+, IE 9+ */
     /*	opacity: 0.9;*/
     
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
 /*    text-decoration: underline;*/
 /*    margin-left: 20%;*/
+    
 }
 
 h3 {
@@ -80,6 +81,7 @@ h3 {
 /*    padding-right: 2%;*/
     color: rgba(220, 220, 220, 1);
     margin-bottom: 0%;
+    margin-top: 1%;
 }
 
 h2 {
@@ -156,8 +158,14 @@ samp {
 td {
     text-align: center;
     width: 8%;
-/*    border: white 1px;*/
-/*    border-style: groove;*/
+/*
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: black 1px;
+    border: white 1px;
+    border-style: dashed;
+*/
 }
 
 #logo {
@@ -175,13 +183,14 @@ td {
 }
 
 #header {
-    display: table;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .w {
 /*    background: #0a0;*/
     background: rgba(0, 100, 0, 0.2);
-    opacity: 0.8;
+/*    opacity: 0.8;*/
     color: white;
     width:8%;
     /* This works in IE 8 & 9 too */
@@ -199,34 +208,34 @@ td {
 /*    background: #a00;*/
     background: rgba(100,0,0,0.2);
     color: white;
-    opacity:0.8;
+/*    opacity:0.8;*/
     width: 8%;
 	/* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
-	filter: alpha(opacity=90);
+/*	filter: alpha(opacity=90);*/
 	
 	/* Older than Firefox 0.9 */
-	-moz-opacity:0.9;
+/*	-moz-opacity:0.9;*/
 	
 	/* Safari 1.x (pre WebKit!) */
-	-khtml-opacity: 0.9;
+/*	-khtml-opacity: 0.9;*/
 }
 
 .t {
 /*    background:#00a;*/
     background: rgba(0,0,100,0.2);
     color:white;
-    opacity:0.8 ;
+/*    opacity:0.8 ;*/
     width: 8%;
     /* This works in IE 8 & 9 too */
 	/* ... but also 5, 6, 7 */
-	filter: alpha(opacity=90);
+/*	filter: alpha(opacity=90);*/
 	
 	/* Older than Firefox 0.9 */
-	-moz-opacity:0.9;
+/*	-moz-opacity:0.9;*/
 	
 	/* Safari 1.x (pre WebKit!) */
-	-khtml-opacity: 0.9;
+/*	-khtml-opacity: 0.9;*/
 }
 
 tr {
@@ -249,7 +258,7 @@ tr {
     color: white;
     background: rgba(0,100, 100, 0.2);
 /*    background: #ffc40f;*/
-    opacity: 0.8;
+/*    opacity: 0.8;*/
 }
 
 .team {
@@ -260,9 +269,13 @@ tr {
 table {
     padding: 10px;
     width: 100%;
-/*    background: rgba(100, 50, 50, 0.5);*/
-    padding: 1%;
+    background: rgba(100,100,100,0.6);
+    padding: 0%;
     margin-top: 1%;
+    border-spacing: 0px;
+/*    border-radius: 5%;*/
+/*    margin-right: 10%;*/
+/*    margin-left: 10%;*/
 /*    border: white 5px;*/
 /*    border-style: groove;*/
 /*    vertical-align: center;*/
@@ -280,8 +293,11 @@ table {
     width: 5%;
 }
 
-.a {
+#footer .a .b {
+    float: left;
+    margin-left: 10%;
     padding-left: 0;
+    margin-right: 10%;
     list-style: none;
 }
 
@@ -291,11 +307,11 @@ table {
 }
 
 input {
-    width: 100%;
-    background:#eee;
-    margin-bottom: 1%;
+/*    width: 100%;*/
+/*    background:#eee;*/
+/*    margin-bottom: 1%;*/
 /*    align-content: right;*/
-    
+margin-bottom: 2%;    
 }
 
 .icon {
@@ -327,9 +343,10 @@ a {
     
 
 ul.a {
-/*  list-style-type: none;*/
-  margin: 0;
-  padding: 1;
+  list-style: none;
+/*  margin-left: 10%;*/
+/*  margin-right: 10%;*/
+  padding: 0%;
   overflow: hidden;
   background-color: rgba(36, 154, 209, 0.8);
   width: 100%;
@@ -770,12 +787,13 @@ ul.a   : hover {
 }
 
 #poster {
-    margin: 5%;
-    align-self: center;
-    width: 30%;
+/*    margin: 5%;*/
+/*    align-self: center;*/
+    width: 80%;
 /*    height: 20%;*/
-    position: relative;
+/*    position: relative;*/
     border: solid;
+/*    background: white;*/
 /*    border-color: aqua;*/
 /*    padding-right: 20%;*/
 /*    padding-left: 20%;*/
@@ -827,7 +845,9 @@ th {
 /*    background: orange;*/
 /*    border: white 5px;*/
 /*    border-style: groove;*/
-    max-width: 70%;
+/*    max-width: 70%;*/ 
+    margin-left: 10%;
+    margin-right: 10%;
 /*    float: ;  */
 }
 
@@ -837,11 +857,7 @@ th {
     display: block;
 }
 
-#Email {
-    width: 50%;
-    display: inline-block;
-    float: left;
-}
+
 
 #contactus {
     width: 50%;
@@ -852,12 +868,7 @@ th {
 /*    flex-wrap: wrap;*/
 }
 
-#submit {
-    width: 10%;
-    margin-left: 1%;
-    display: block;
-    float: left;
-}
+
 
 #condiv {
     
@@ -886,17 +897,20 @@ th {
 p {
     color: #999;
     font-weight: 600;
-    line-height: 1.3;
-    margin-left: 1%;
-    margin-top: -2%;
+/*    line-height: 0.5;*/
+/*    margin-left: 1%;*/
+/*    margin-top: -2%;*/
     font-size: 25px;
 }
 
 .infocat {
     margin-top: 2%;
     border-style: groove;
-    border-radius: 10%;
-    background: rgba(200,200,200,0.5);
+    border-radius: 5px;
+/*    background: rgba(200, 200, 200,0.3); */
+    background: rgba(100,100,100,0.5);
+/*    background-color: rgba(36, 154, 209, 0.1);*/
+    border-color: #4CAF50;
 }
 
 .infocat.ul {
@@ -904,7 +918,8 @@ p {
 }
 
 li {
-    color: rgba(0,0,0, 1);
+/*    color: #4CAF50;*/
+    color: rgba(200,200,200,1);
 }
 
 
@@ -915,4 +930,101 @@ li {
 
 #welcome {
     margin-top: -1%;
+}
+
+#footer {
+    margin-top: 5%;
+    margin-bottom: 0%;
+/*    padding-bottom: 1%;*/
+    min-height: 100%;
+/*    position: absolute;*/
+    width: 100%;
+}
+
+#footer ul li {
+    padding: 1%;
+}
+
+.waiver {
+    margin-top: 2%;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 2%;
+/*    background: rgba(200, 200, 200,0.3); */
+    background: rgba(100,100,100,0.9);
+/*    background-color: rgba(36, 154, 209, 0.1);*/
+    border-color: #4CAF50;
+}
+
+
+
+#agree {
+    display: inline-block;
+    float: right;
+}
+
+form p {
+    font-size: 14px;
+    display: contents;
+}
+
+select {
+    margin-bottom: 2%;
+}
+
+form {
+    background: rgba(0,0,0, 0.7);
+    padding: 2%;
+    border: solid;
+    border-color: green;
+/*    width: 100%;*/
+}
+
+
+
+
+
+.txt {
+    width:100%;
+}
+
+.tick {
+    float: right;
+}
+
+#18+ {
+    float: right;
+}
+
+#18 {
+    float: right;
+}
+
+.team_r {
+    width: 100%;
+    color: rgba(150,150,150,1);
+/*    height: 40px;*/
+    display: block;
+/*    background-color: #4CAF50;*/
+    background-color: rgba(36, 154, 209, 0.2);
+}
+
+.team_r:focus {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.roster_buttons {
+    border-style: none;
+/*    background:;*/
+    width: 20%;
+}
+
+#schedandstand {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(100,100,100,1);
 }

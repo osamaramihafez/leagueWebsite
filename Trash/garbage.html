@@ -11,114 +11,25 @@
     <body>
 
 <!--        <img id=logo src="images/Logo.jpg">-->
-        <center>
-        <img src="images/MAAlogo.png" id="Logo">
-        <ul class = "a">
-<!--          <li class = "b"><a href="index.html">Home</a></li>-->
-<!--          <li class = "b"><a href="about.html">About</a></li>-->
-          <li class = "b sched"><a class="active" href="Schedule&Standings.php">Schedule/Standings</a></li>
-<!--      
-          <li class = "b"><a href="Sign-up.html"> Register</a></li>
-          <li class = "b"><a href="contact.html">Contact</a></li>
-          <li class = "b"><a href="about.html">Initiatives</a></li>
--->
+        <div id="header">
+            <center>
+            <img src="images/MAAlogo.png" id="Logo">
+            <h4 id="welcome">Welcome to the MAA Soccer League Website</h4>
+            </center>
+            <ul class = "a">
+              <li class = "b"><a href="../index.html">Home</a></li>
+    <!--          <li class = "b"><a href="about.html">About</a></li>-->
+              <li class = "b sched"><a class="active" href="ScheduleStandings.php">Schedules and Standings</a></li>
+    <!--      
+              <li class = "b"><a href="Sign-up.html"> Register</a></li>
+              <li class = "b"><a href="contact.html">Contact</a></li>
+              <li class = "b"><a href="about.html">Initiatives</a></li>
+    -->
 
-        </ul>
-        </center>
+            </ul>
+        </div>
 
-<script>
-    
-//    var disp;    
-    
-    function hide(){
-        var schedule = document.getElementById("schedule");
-        disp = schedule.style.display;
-        console.log(disp);
-        schedule.style.display = "none";
-    }
-    
-    function resetSched(){
-        var schedule = document.getElementById("schedule");
-        var i = 0;
-//        console.log(disp);
-        schedule.style.display = "";
-        for (;i<schedule.rows.length; i++){
-            schedule.rows[i].style.display = "";
-        }
-        console.log("showing table");   
-    }
-
-    function selectTeam(team){
-
-//        var team = document.getElementsByClassName("team_button");
-        var schedule = document.getElementById("schedule");
-        resetSched();
-        var i = 0;
-        var x = 0;
-        var left;
-        var right;
-//        console.log(schedule);
-
-        for (;i<schedule.rows.length; i++){
-//            console.log("inside");
-//            console.log(team);
-//            console.log(schedule.rows[i].cells[1]);
-            try{
-                left = schedule.rows[i].cells[1].innerHTML.trim().replace(/&nbsp;/g, '');
-                right = schedule.rows[i].cells[5].innerHTML.trim().replace(/&nbsp;/g, '');
-              }
-              catch(SyntaxError){
-                  console.log("Info " + x);
-              }
-              // if (!containString(team, left) && !containString(team, right)){
-              if (team != left && team!=right){
-                      schedule.rows[i].style.display = "none";
-//                      schedule.style.display = "none";
-                       console.log(team);
-                      // console.log(left);
-                      // console.log(right);
-                    // console.log(schedule.rows[i].cells[5]);
-                  }
-                else{
-                    x++;
-//                      console.log(team);
-//                      console.log(left);
-//                      console.log(right);
-//                    console.log("game " + x + " for " + team);
-                }
-        }
-    }
-//    document.getElementById("team_button").onclick = selectTeam();
-
-</script>
-
-<!--        <input class="team_button" onClick="selectTeam(this.value)" type="button" value="ahgsdvahgsvdhasvg"/>-->
-<!--    <div id="everything">-->
-<!--    <table id="schedule">-->
-        
-<?php
-
-//mysql_connect();
-        
-    $team1 = "Roma";
-    $team2 = "Liverpool";
-    $team3 = "Tolba";
-    $team4 = "Eagles";
-    $team5 = "Ricks";
-    $team6 = "Regala";
-    $team7 = "Dream";
-    $team8 = "Brothers FC";
-    $team9 = "Yemeni Team";
-    $team10 = "Joga Bonito FC";
-    $team11 = "Babylon";
-    $team12 = "ISNA's Team";
-    $team13 = "North Africa FC";
-    $team14 = "Refai's Team";
-    $team15 = "Yemeni Team 2";
-    $team16 = "Random FC";
-
- echo '
- <center>
+<center>
     <div id="everything">
     <table id="standings">
      <th class="table_head" colspan="10">
@@ -137,7 +48,7 @@
          <th class="wp">WP</th>
      </tr>
      <tr>
-         <td class="teams team"> <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team1 ; echo '"/> </td>
+         <td class="teams team"> '; echo $team1 ; echo ' </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -149,7 +60,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value=" '; echo $team2 ; echo '"/> </td>
+         <td class="teams team">  '; echo $team2 ; echo ' </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -161,7 +72,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team3 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team3 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -173,7 +84,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team4 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team4 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -185,7 +96,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team5 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team5 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -197,7 +108,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team6 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team6 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -209,7 +120,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team7 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team7 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -221,7 +132,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team8 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team8 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -233,7 +144,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team9 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team9 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -245,7 +156,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team10 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team10 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -257,7 +168,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team11 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team11 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -269,7 +180,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team12 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team12 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -281,7 +192,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team13 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team13 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -293,7 +204,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team14 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team14 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -305,7 +216,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team15 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team15 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -317,7 +228,7 @@
          <td class="wp">0.00</td>
      </tr>
      <tr>
-         <td class="teams team">  <input class="team_button" onClick="selectTeam(this.value)" type="button" value="'; echo $team16 ; echo '"/>  </td>
+         <td class="teams team">  '; echo $team16 ; echo '  </td>
          <td class="gp">0</td>
          <td class="pts">0</td>
          <td class="w">0</td>
@@ -330,8 +241,8 @@
      </tr>
  </table>
 
-    <input type="button" id="hidesched" value="See full schedule" onClick="resetSched()" />
-<!--    <input type="button" id="fullsched" value="hide sched" onClick="hide()" /> -->
+<!--    <input type="button" id="hidesched" value="See full schedule" onClick="resetSched()" />
+    <input type="button" id="fullsched" value="hide sched" onClick="hide()" /> -->
 
  <table id="schedule"><tbody>
      <th class="table_head" colspan="8">Schedule</th>
@@ -382,8 +293,6 @@
  </tbody></table>
 </div>
 </center>
-'
-?>
 
     </body>
 </html>
