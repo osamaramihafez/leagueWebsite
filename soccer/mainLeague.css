@@ -942,9 +942,7 @@ li {
     width: 100%;
 }
 
-#footer ul li {
-    padding: 1%;
-}
+
 
 .waiver {
     margin-top: 2%;
@@ -1067,7 +1065,7 @@ tr:nth-child(even) {
 }
 
 #whatismaa {
-    font-size: 14px;
+    font-size: 1vw;
     margin-left: 5%;
 }
 
@@ -1096,4 +1094,8 @@ tr:nth-child(even) {
     border-radius: 10px;
 /*    margin-bottom: 0%;*/
     font-family: sans-serif;
+}
+
+#infolist li {
+    font-size: 0.9vw;
 }
