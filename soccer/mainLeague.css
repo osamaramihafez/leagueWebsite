@@ -86,7 +86,7 @@ h3 {
 
 h2 {
     margin-top: 1.3em;
-    text-decoration: underline;
+/*    text-decoration: underline;*/
 }
 
 b, strong {
@@ -911,6 +911,7 @@ p {
     background: rgba(100,100,100,0.5);
 /*    background-color: rgba(36, 154, 209, 0.1);*/
     border-color: #4CAF50;
+/*    border-top-style: ridge;*/
 }
 
 .infocat.ul {
@@ -1005,6 +1006,7 @@ form {
     color: rgba(150,150,150,1);
 /*    height: 40px;*/
     display: block;
+    border-style: groove;
 /*    background-color: #4CAF50;*/
     background-color: rgba(36, 154, 209, 0.2);
 }
@@ -1027,4 +1029,71 @@ form {
 
 tr:nth-child(even) {
   background-color: rgba(100,100,100,1);
+}
+.TeamList {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(0,0,0,0.9);
+    padding: 1%;
+}
+
+#BFMVP {
+/*    width: 50%;*/
+/*    padding: 5%;*/
+    margin-top: 2%;
+    border-style: groove;
+    border-radius: 5px;
+/*    border-bottom: none;*/
+/*    background: rgba(200, 200, 200,0.3); */
+    background: rgba(100,100,100,0.5);
+/*    background-color: rgba(36, 154, 209, 0.1);*/
+    border-color: #4CAF50;
+}
+
+#BFMVPimg {
+    width: 100%;
+    border-radius: 20px;
+/*    background: rgba(248, 148, 6, 0.5);*/
+/*    padding: 1%;*/
+/*    padding-right: 5%;*/
+/*    padding-left: 5%;*/
+/*    border-style: groove;*/
+/*    float: right;*/
+}
+
+#bf {
+ margin-top: -3%;   
+}
+
+#whatismaa {
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+#mvp {
+    
+    width: 70%;
+    border-radius: 10px;
+/*    background: rgba(248, 148, 6, 0.5);*/
+    background: rgba(0,0,0,0.8);
+    padding: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+/*    border-style: groove;*/
+    margin-bottom: 1%;
+/*    border-color: #4CAF50;*/
+}
+
+#more:hover {
+    cursor: default;
+}
+
+#mvpname {
+/*    font-size: 1px;*/
+    color: rgba(250,250,250,1);
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+/*    margin-bottom: 0%;*/
+    font-family: sans-serif;
 }
