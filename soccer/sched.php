@@ -71,7 +71,7 @@ echo "
          <th class='gf'>GF</th>
          <th class='ga'>GA</th>
          <th class='gd'>GD</th>
-         <th class='wp'>WP</th>
+         <th class='wp'>Win %</th>
      </tr>
      <tr>
          <td class='teams team'>  $team1  </td>
@@ -274,134 +274,153 @@ echo "
 <tbody>
  <th class='table_head' colspan='8'>Schedule</th>
  <tr><th>Date</th><th colspan='5'>Match</th><th>Time/Status</th><th>Field</th></tr>
- <th class='week_head' colspan='8'>Week 1 Regular Season</th>
- <tr class='week1'><td>11-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week1'><td>11-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>1:05</td><td>Field C</td></tr>
- <tr><td>11-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 2 Regular Season</th>
- <tr class='week2'><td>18-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team12</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team11</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team6</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week2'><td>18-Jan</td><td>$team7</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 3 Regular Season</th>
- <tr class='week3'><td>25-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team12</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week3'><td>25-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 4 Regular Season</th>
- <tr class='week 4'><td>1-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week 4'><td>1-Feb</td><td>$team6</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 5 Regular Season</th>
- <tr class='week5'><td>8-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week5'><td>8-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 6 Regular Season</th>
- <tr class='week6'><td>15-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week6'><td>15-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 7 Regular Season</th>
- <tr class='week7'><td>22-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field D</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20</td><td>Field A</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20</td><td>Field B</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20</td><td>Field C</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20</td><td>Field D</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05</td><td>Field A</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05</td><td>Field B</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05</td><td>Field C</td></tr>
- <tr class='week7'><td>22-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05</td><td>Field D</td></tr>
- <th class='week_head' colspan='8'>Week 8 Regular Season</th>
- <tr class='week8'><td>29-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>10:45</td><td>Field A</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>10:45</td><td>Field B</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45</td><td>Field C</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45</td><td>Field D</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35</td><td>Field A</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35</td><td>Field B</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35</td><td>Field C</td></tr>
- <tr class='week8'><td>29-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35</td><td>Field D</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 1 Regular Season</th> <th class='week_head'>January 11th</th>
+ <tr class='week1'><td>11-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week1'><td>11-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week1'><td>11-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week1'><td>11-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week1'><td>11-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr><td>11-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ 
+ <th class='week_head' colspan='7'>Week 2 Regular Season</th><th class='week_head'>January 18th</th>
+ 
+ <tr class='week2'><td>18-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team12</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week2'><td>18-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team11</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week2'><td>18-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team6</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week2'><td>18-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td>18-Jan</td><td>$team7</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 3 Regular Season</th><th class='week_head'>January 25th</th>
+ <tr class='week3'><td>25-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week3'><td>25-Jan</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team4</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week3'><td>25-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team13</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team12</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week3'><td>25-Jan</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week3'><td>25-Jan</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 4 Regular Season</th><th class='week_head'>February 1st</th>
+ <tr class='week 4'><td>1-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team14</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team10</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team16</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team15</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week 4'><td>1-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week 4'><td>1-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week 4'><td>1-Feb</td><td>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week 4'><td>1-Feb</td><td>$team6</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 5 Regular Season</th> <th class='week_head'>February 8th</th>
+ <tr class='week5'><td>8-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week5'><td>8-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week5'><td>8-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week5'><td>8-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week5'><td>8-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 6 Regular Season</th> <th class='week_head'>February 15th</th>
+ <tr class='week6'><td>15-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week6'><td>15-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week6'><td>15-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ 
+ <tr class='week6'><td>15-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week6'><td>15-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 7 Regular Season</th> <th class='week_head'>February 22nd</th>
+ <tr class='week7'><td>22-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week7'><td>22-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week7'><td>22-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>12:20 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>12:20 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>12:20 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>12:20 am (Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week7'><td>22-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>1:05 am (Sunday)</td><td>Field 1</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>1:05 am (Sunday)</td><td>Field 2</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>1:05 am (Sunday)</td><td>Field 3</td></tr>
+ <tr class='week7'><td>22-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>1:05 am (Sunday)</td> <td>Field 4</td></tr>
+ 
+ <th class='week_head' colspan='7'>Week 1 Regular Season</th> <th class='week_head'>February 29th</th>
+ <tr class='week8'><td>29-Feb</td><td>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team4</td><td>10:45 pm</td><td>Field 1</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team3</td><td>10:45 pm</td><td>Field 2</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team8</td><td>10:45 pm</td><td>Field 3</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team7</td><td>10:45 pm</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week8'><td>29-Feb</td><td>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team6</td><td>11:35 pm</td><td>Field 1</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team13</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team5</td><td>11:35 pm</td><td>Field 2</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team16</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team2</td><td>11:35 pm</td><td>Field 3</td></tr>
+ <tr class='week8'><td>29-Feb</td><td>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td>$team1</td><td>11:35 pm</td> <td>Field 4</td></tr>
 </tbody></table>
 "
 ?>

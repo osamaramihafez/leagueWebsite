@@ -931,6 +931,7 @@ li {
 
 #welcome {
     margin-top: -1%;
+    font-size: 1vw;
 }
 
 #footer {
@@ -1098,4 +1099,19 @@ tr:nth-child(even) {
 
 #infolist li {
     font-size: 0.9vw;
+}
+
+.time_split {
+    background: rgba(0,0,0,0.5);
+    padding: 0.1%;
+}
+
+.teams {
+    text-align: left;
+    padding-left: 2%;
+}
+
+.Team {
+    text-align: left;
+    padding-left: 2%;
 }
