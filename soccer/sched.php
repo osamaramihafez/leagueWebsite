@@ -19,7 +19,7 @@
             <ul class = 'a'>
               <li class = 'b'><a href='index.html'>Home</a></li>
     <!--          <li class = 'b'><a href='about.html'>About</a></li>-->
-              <li class = 'b sched'><a class='active' href='ScheduleStandings.php'>Schedules and Standings</a></li>
+              <li class = 'b sched'><a class='active' href='sched.php'>Schedules and Standings</a></li>
             <li class='b'><a id='more'>More to come soon!</a></li>
                 
     <!--
