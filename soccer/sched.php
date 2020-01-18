@@ -353,25 +353,25 @@ echo "
  
  <th class='week_head' colspan='7'>Week 2 Regular Season</th><th class='week_head'>January 18th</th>
  
- <tr class='week2'><td class='team'>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team12</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 1</td></tr>
- <tr class='week2'><td class='team'>$team11</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team13</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 2</td></tr>
- <tr class='week2'><td class='team'>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team15</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 3</td></tr>
- <tr class='week2'><td class='team'>$team14</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team16</td><td>10:45 pm</td><td>(Saturday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week2'><td class='team'>Brothers</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Joga Bonito</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td class='team'>Black Horse FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>ISNA SC</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td class='team'>North Africa FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Syrian Eagles</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td class='team'>Saga FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Team 16</td><td>10:45 pm</td><td>(Saturday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
  
- <tr class='week2'><td class='team'>$team9</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team11</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 1</td></tr>
- <tr class='week2'><td class='team'>$team12</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team13</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 2</td></tr>
- <tr class='week2'><td class='team'>$team10</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team14</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 3</td></tr>
- <tr class='week2'><td class='team'>$team15</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team16</td><td>11:35 pm</td><td>(Saturday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week2'><td class='team'>Brothers FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Black Horse FC</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td class='team'>Joga Bonito FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>ISNA SC</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td class='team'>North Africa FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Saga FC</td><td>11:35 pm</td><td>(Saturday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td class='team'>Syrian Eagles</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Team 16</td><td>11:35 pm</td><td>(Saturday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
  
- <tr class='week2'><td class='team'>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team3</td><td>12:20 am</td><td>(Sunday)</td><td>Field 1</td></tr>
- <tr class='week2'><td class='team'>$team2</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team4</td><td>12:20 am</td><td>(Sunday)</td><td>Field 2</td></tr>
- <tr class='week2'><td class='team'>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team7</td><td>12:20 am</td><td>(Sunday)</td><td>Field 3</td></tr>
- <tr class='week2'><td class='team'>$team6</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team8</td><td>12:20 am</td><td>(Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
+ <tr class='week2'><td class='team'>A.S. Roma</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Tolba FC</td><td>12:20 am</td><td>(Sunday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td class='team'>Liverpool</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Eagles FC</td><td>12:20 am</td><td>(Sunday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td class='team'>Ricks FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Dream FC</td><td>12:20 am</td><td>(Sunday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td class='team'>Regala FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Babylon FC</td><td>12:20 am</td><td>(Sunday)</td> <td>Field 4</td></tr> <th class='time_split' colspan='8'></th>
  
- <tr class='week2'><td class='team'>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team2</td><td>1:05 am</td><td>(Sunday)</td><td>Field 1</td></tr>
- <tr class='week2'><td class='team'>$team3</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team4</td><td>1:05 am</td><td>(Sunday)</td><td>Field 2</td></tr>
- <tr class='week2'><td class='team'>$team5</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team6</td><td>1:05 am</td><td>(Sunday)</td><td>Field 3</td></tr>
- <tr class='week2'><td class='team'>$team7</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team8</td><td>1:05 am</td><td>(Sunday)</td> <td>Field 4</td></tr>
+ <tr class='week2'><td class='team'>A.S. Roma</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Liverpool</td><td>1:05 am</td><td>(Sunday)</td><td>Field 1</td></tr>
+ <tr class='week2'><td class='team'>Tolba FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Eagles FC</td><td>1:05 am</td><td>(Sunday)</td><td>Field 2</td></tr>
+ <tr class='week2'><td class='team'>Ricks FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Regala FC</td><td>1:05 am</td><td>(Sunday)</td><td>Field 3</td></tr>
+ <tr class='week2'><td class='team'>Dream FC</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>Babylon FC</td><td>1:05 am</td><td>(Sunday)</td> <td>Field 4</td></tr>
  
  <th class='week_head' colspan='7'>Week 3 Regular Season</th><th class='week_head'>January 25th</th>
  <tr class='week3'><td class='team'>$team1</td><td class='home_score'></td><td>-</td><td class='away_score'></td><td class='team'>$team6</td><td>10:45 pm</td><td>(Saturday)</td><td>Field 1</td></tr>
