@@ -99,204 +99,204 @@ echo "
      </tr>
      <tr>
          <td class='position'>1.</td>
-         <td class='teams team'>  $team1  </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
+         <td class='teams team'>  Brothers FC  </td>
+         <td class='gp'>2</td>
+         <td class='pts'>6</td>
+         <td class='w'>2</td>
          <td class='l'>0</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>7</td>
+         <td class='ga'>1</td>
+         <td class='gd'>6</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>2.</td>
-         <td class='teams team'>   $team2  </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
+         <td class='teams team'>   Regala FC  </td>
+         <td class='gp'>2</td>
+         <td class='pts'>6</td>
+         <td class='w'>2</td>
          <td class='l'>0</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>6</td>
+         <td class='ga'>1</td>
+         <td class='gd'>5</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>3.</td>
-         <td class='teams team'>   $team3   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
+         <td class='teams team'>   Black Horse FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>6</td>
+         <td class='w'>2</td>
          <td class='l'>0</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>5</td>
+         <td class='ga'>1</td>
+         <td class='gd'>4</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>4.</td>
-         <td class='teams team'>   $team4   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
+         <td class='teams team'>   A.S. Roma   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>6</td>
+         <td class='w'>2</td>
          <td class='l'>0</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>5</td>
+         <td class='ga'>2</td>
+         <td class='gd'>3</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>5.</td>
-         <td class='teams team'>   $team5   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
+         <td class='teams team'>   Tolba FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>4</td>
+         <td class='w'>1</td>
          <td class='l'>0</td>
-         <td class='t'>0</td>
-         <td class='gf'>0</td>
+         <td class='t'>1</td>
+         <td class='gf'>6</td>
          <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gd'>6</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>6.</td>
-         <td class='teams team'>   $team6   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='teams team'>   Babylon   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>3</td>
+         <td class='w'>1</td>
+         <td class='l'>1</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>6</td>
+         <td class='ga'>3</td>
+         <td class='gd'>3</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>7.</td>
-         <td class='teams team'>   $team7   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='teams team'>   North Africa FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>3</td>
+         <td class='w'>1</td>
+         <td class='l'>1</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>4</td>
+         <td class='ga'>3</td>
+         <td class='gd'>1</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>8.</td>
-         <td class='teams team'>   $team8   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='teams team'>   Eagles FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>3</td>
+         <td class='w'>1</td>
+         <td class='l'>1</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>3</td>
+         <td class='ga'>4</td>
+         <td class='gd'>-1</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>9.</td>
-         <td class='teams team'>   $team9   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
-         <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='teams team'>   Joga Bonito   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>3</td>
+         <td class='w'>1</td>
+         <td class='l'>1</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>2</td>
+         <td class='ga'>4</td>
+         <td class='gd'>-2</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
          <td class='position'>10.</td>
-         <td class='teams team'>   $team10   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
+         <td class='teams team'>   ISNA SC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>2</td>
          <td class='w'>0</td>
          <td class='l'>0</td>
-         <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
+         <td class='t'>2</td>
+         <td class='gf'>4</td>
+         <td class='ga'>4</td>
          <td class='gd'>0</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>11.</td> <td class='teams team'>   $team11   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
+         <td class='position'>11.</td> <td class='teams team'>   Saga FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>1</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
-         <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='l'>1</td>
+         <td class='t'>1</td>
+         <td class='gf'>3</td>
+         <td class='ga'>4</td>
+         <td class='gd'>-1</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>12.</td> <td class='teams team'>   $team12   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
+         <td class='position'>12.</td> <td class='teams team'>   Dream FC   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>1</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
-         <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='l'>1</td>
+         <td class='t'>1</td>
+         <td class='gf'>2</td>
+         <td class='ga'>3</td>
+         <td class='gd'>-1</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>13.</td> <td class='teams team'>   $team13   </td>
-         <td class='gp'>0</td>
-         <td class='pts'>0</td>
+         <td class='position'>13.</td> <td class='teams team'>   Team 16   </td>
+         <td class='gp'>2</td>
+         <td class='pts'>1</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
-         <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='l'>1</td>
+         <td class='t'>1</td>
+         <td class='gf'>2</td>
+         <td class='ga'>5</td>
+         <td class='gd'>-3</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>14.</td> <td class='teams team'>   $team14   </td>
-         <td class='gp'>0</td>
+         <td class='position'>14.</td> <td class='teams team'>   Syrian Eagles   </td>
+         <td class='gp'>2</td>
          <td class='pts'>0</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='l'>2</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>1</td>
+         <td class='ga'>6</td>
+         <td class='gd'>-5</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>15.</td> <td class='teams team'>   $team15   </td>
-         <td class='gp'>0</td>
+         <td class='position'>15.</td> <td class='teams team'>   Liverpool   </td>
+         <td class='gp'>2</td>
          <td class='pts'>0</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='l'>2</td>
          <td class='t'>0</td>
-         <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='gf'>1</td>
+         <td class='ga'>8</td>
+         <td class='gd'>-7</td>
          <td class='wp'>0.00</td>
      </tr>
      <tr>
-         <td class='position'>16.</td> <td class='teams team'>   $team16   </td>
-         <td class='gp'>0</td>
+         <td class='position'>16.</td> <td class='teams team'>   Ricks FC   </td>
+         <td class='gp'>2</td>
          <td class='pts'>0</td>
          <td class='w'>0</td>
-         <td class='l'>0</td>
+         <td class='l'>2</td>
          <td class='t'>0</td>
          <td class='gf'>0</td>
-         <td class='ga'>0</td>
-         <td class='gd'>0</td>
+         <td class='ga'>8</td>
+         <td class='gd'>-8</td>
          <td class='wp'>0.00</td>
      </tr>
  </table>
