@@ -13,12 +13,12 @@ HTML_START = "<!DOCTYPE html> \
         <meta charset='utf-8'> \
         <meta http-equiv='X-UA-Compatible' content='IE=edge'> \
         <title>MAA - Schedule and Standings</title> \
-        <link rel='stylesheet' href='soccer/mainLeague.css'> \
+        <link rel='stylesheet' href='mainLeague.css'> \
     </head> \
     <body> \
         <div id='header'> \
             <center> \
-            <img src='soccer/images/MAAlogo.png' id='Logo'> \
+            <img src='images/MAAlogo.png' id='Logo'> \
             </center> \
             <ul class = 'a'> \
               <li class = 'b'><a href='index.html'>Home</a></li> \
