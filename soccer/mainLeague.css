@@ -2,7 +2,7 @@ html {
 /*    background: #e6e9e9;*/
 /*    background:;*/
 /*    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);*/
-    background-image: url(images/Poster_no_info.jpg);
+/*    background-image: url(images/Poster_no_info.jpg);*/
 /*    background-image: url(images/Futsalbythenums.png), url(images/TheNumbers.png);*/
     background-position: center;
     background-color: white;
@@ -12,7 +12,11 @@ html {
 /*    background-size: auto;*/
 /*    background-size: contain;*/
     background-size: cover;
+    background: rgba(0,0,0,0.4);
+    
 /*    height: 100%;*/
+    top: 0;
+    left: 0;
     
 }
 
@@ -28,7 +32,8 @@ body {
     padding: 2em 2em 4em;
 /*    background: rgba(212,175,105,0.6);*/
 /*    background: rgba(250,250,250,0.9);*/
-    background: rgba(0,0,0,0.7);
+/*    background: rgba(0,0,0,0.4);*/
+    overflow: auto;
     height: 100%;
 /*    min-height: 100%;*/
 /*    border-right: 2px;*/
@@ -1155,7 +1160,7 @@ em {
 #sponsor {
     background: rgba(0,0,0,0.8);
     padding-top: 1%;
-    width: 80%;
+    width: 100%;
     margin-top: 1%;
 /*    float: bottom;*/
     margin-bottom: 1%;
