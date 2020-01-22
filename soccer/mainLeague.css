@@ -90,6 +90,7 @@ h2 {
     margin-bottom: none;
     font-size: 4vw;
     margin-top: 0%;
+    font-family: fantasy;
 /*    text-decoration: underline;*/
 }
 
@@ -1062,6 +1063,10 @@ tr:nth-child(even) {
 #BFMVPimg {
     width: 70%;
     border-radius: 20px;
+    margin-top: none;
+/*    float: right;*/
+/*    margin-right: 10%; */
+    margin-bottom: 1%;
 /*    background: rgba(248, 148, 6, 0.5);*/
 /*    padding: 1%;*/
 /*    padding-right: 5%;*/
@@ -1071,7 +1076,7 @@ tr:nth-child(even) {
 }
 
 #bf {
- margin-top: -7%;   
+ margin-top: -3%;   
 }
 
 #whatismaa {
@@ -1103,13 +1108,14 @@ tr:nth-child(even) {
     margin-bottom: none;
     margin-top: none;
 /*    margin: none;*/
+/*    float: left;*/
     width: 50%;
     font-style: normal;
     color: rgba(250,250,250,1);
 /*    background: rgba(100, 100, 100, 0.5);*/
 /*    border-radius: 10px;*/
 /*    margin-bottom: 0%;*/
-    font-family: sans-serif;
+    font-family: fantasy;
 }
 
 #infolist li {
@@ -1136,33 +1142,39 @@ em {
 /*    margin-left: 5%;*/
 }
 
-h5 {
 
-}
 
 #week {
-    font-size: 3vw;
-    margin-bottom: 2%;
+    font-size: 1vw;
+    margin-top: 0%;
+/*    float: right;*/
+/*    clear: left;*/
+    margin-right: 1%;
 }
 
 #sponsor {
     background: rgba(0,0,0,0.8);
     padding-top: 1%;
     width: 80%;
+    margin-top: 1%;
+/*    float: bottom;*/
     margin-bottom: 1%;
     border-radius: 10px;
 }
 
 #btyb {
     margin-top: 1%;
+/*    position: sticky;*/
 /*    margin-bottom: 1%;*/
-    font-size: 2vw;
+    font-size: 1vw;
+/*    float: bottom;*/
 }
 
 #team_name {
     margin-top: -2%;
     margin-bottom: 1%;
     font-size: 1vw;
+/*    float: left;*/
 }
 
 #date {
@@ -1180,4 +1192,12 @@ h5 {
 /*    padding-right: 1%;*/
 /*    padding-left: 0%;*/
 /*    padding-right: 1%;*/
+}
+
+#potw {
+/*    margin-bottom: -1%;*/
+/*    float: left;*/
+    margin-top: 1%;
+    margin-bottom: 0%;
+/*    margin-left: 10%;*/
 }
