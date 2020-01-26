@@ -33,7 +33,7 @@ class game:
         else:
             t = '<td>' + str(TIMES[self.time]) + '</td> <td>(Sunday)</td> '
 
-        f = '<td>Field ' + str(self.field) + '</td></tr>'
+        f = '<td>Field ' + str(self.field) + '</td></tr>\n'
         return row + ht + hs + sep + aws + at + t + f
 
 

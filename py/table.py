@@ -50,21 +50,19 @@ class standings:
     def __repr__(self):
         self.sort_teams()
         table = "<table id='standings'> \n\
-     <th class='table_head' colspan='11'> \
-     Standings \
-     </th> \n\
-     <tr id='standings'> \
-         <th class='position'></th> \
-         <th class='Team'> </th> \
-         <th class='gp'>GP</th> \
-         <th>PTS</th> \
-         <th >W</th> \
-         <th>L</th> \
-         <th>T</th> \
-         <th class='gf'>GF</th> \
-         <th class='ga'>GA</th> \
-         <th class='gd'>GD</th> \
-     </tr>\n"
+    <th class='table_head' colspan='11'> Standings </th> \n\
+    <tr id='standings'> \n\
+    <th class='position'></th> \n\
+    <th class='Team'> </th> \n\
+    <th class='gp'>GP</th> \n\
+    <th>PTS</th> \n\
+    <th >W</th> \n\
+    <th>L</th> \n\
+    <th>T</th> \n\
+    <th class='gf'>GF</th> \n\
+    <th class='ga'>GA</th> \n\
+    <th class='gd'>GD</th> \n\
+    </tr>\n"
 
      # <th class='wp'>Win %</th>
         for i in self.order:
