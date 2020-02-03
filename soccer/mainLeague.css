@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     font-family: 'Orbitron';
     font-size: 35px;
-    margin-left: 5%;
+/*    margin-left: 5%;*/
 /*    text-decoration: underline;*/
 /*    padding-top: 85px;*/
 /*
@@ -751,10 +751,7 @@ thead {
 
 
 
-hr {
-    width: 90%;
-/*    margin-bottom: 30%;*/
-}
+
 
 
 
@@ -1111,7 +1108,7 @@ tr:nth-child(even) {
 }
 
 #mvpname {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-bottom: none;
     margin-top: none;
 /*    margin: none;*/
@@ -1145,7 +1142,7 @@ tr:nth-child(even) {
 }
 
 em {
-    float: center;
+/*    float: center;*/
 /*    margin-left: 5%;*/
 }
 
@@ -1185,7 +1182,7 @@ em {
 #team_name {
 /*    margin-top: -2%;  */
     margin-bottom: 4%;
-/*    font-size: 1vw;*/
+    font-size: 1vw;
 /*    float: left;*/
 }
 
@@ -1227,18 +1224,18 @@ em {
   top: 0%;
   right: 0%;
   width: 100%;
-  max-width: 30%;
+  max-width: 20%;
   max-height: 100%;
   min-height: 71%;
   color: white;
   font-size: 2vw;
   padding: 3%;
   padding-top: 15%;
-  padding-right: 10%;
+  padding-right: 5%;
   padding-left: 5%;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.91);
 }
 
 
