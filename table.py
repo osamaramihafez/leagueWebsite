@@ -32,11 +32,14 @@ class standings:
 
     def update_teams(self, game):
         if game.home_score != '':
+            # print(game.home, game.away)
+            print(self.teams[game.home].name, self.teams[game.away].name)
             self.teams[game.away].add_gf(int(game.away_score))
             self.teams[game.home].add_gf(int(game.home_score))
             self.teams[game.home].add_ga(int(game.away_score))
             self.teams[game.away].add_ga(int(game.home_score))
             self.result(game)
+            print(self.teams[game.home].pts, self.teams[game.away].pts)
 
     def sort_teams(self):
         games = self.order

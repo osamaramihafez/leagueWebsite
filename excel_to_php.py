@@ -41,7 +41,7 @@ HTML_SCHED = "<table id='schedule'> \
  <th class='table_head' colspan='8'>Schedule</th> \
  <tr><th colspan='5'>Match</th><th colspan='2'>Time</th><th>Field</th></tr>"
 
-R_FILE = 'week2ugly.csv'
+R_FILE = 'week4ugly.csv'
 
 def create_teams(home, away):
     x, y = team(home), team(away)
@@ -67,8 +67,11 @@ def read_excel(file):
         team_1, team_2 = create_teams(game_info[3], game_info[4])
         st.add_team(team_1)
         st.add_team(team_2)
-        new_game = game(game_info[3],game_info[4], game_info[5], game_info[7], time, game_info[2], week)
-        #print(new_game)
+        try:
+            new_game = game(game_info[3],game_info[4], int(game_info[5]), int(game_info[7]), time, game_info[2], week)
+        except ValueError:
+            new_game = game(game_info[3],game_info[4], game_info[5], game_info[7], time, game_info[2], week)
+        # print(new_game)
         st.update_teams(new_game)
         s.add(new_game)
     f.close()
@@ -76,18 +79,18 @@ def read_excel(file):
 
 W_FILE = 'new.html'
 
-def print_table():
-    f = read_excel(R_FILE)
-    s = f[0]
-    st = f[1]
-    x = True
-    print(st)
-    while x == True:
-        if s.currgame != None:
-            print(s.currgame)
-        if s.next_game() == False:
-            x = False
-    s.reset_i()
+# def print_table():
+#     f = read_excel(R_FILE)
+#     s = f[0]
+#     st = f[1]
+#     x = True
+#     print(st)
+#     while x == True:
+#         if s.currgame != None:
+#             print(s.currgame)
+#         if s.next_game() == False:
+#             x = False
+#     s.reset_i()
 
 def write_sched():
     """
@@ -117,5 +120,5 @@ def write_sched():
     f.close()
     s.reset_i()
 
-print_table()
+# print_table()
 write_sched()
