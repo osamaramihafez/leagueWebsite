@@ -1,6 +1,6 @@
 #player.py
 
-class player:
+class player: #this class represents the player object which contains info on each individual player
 
     def __init__(self, player_name):
         self.team = ''
@@ -27,7 +27,9 @@ class player:
             return True
         return False
 
-class players:
+
+
+class players: #notice the s at the end, this class stores all of the players in the league
 
     def __init__(self):
         self.pr = [] #pr: player reankings. Ranking will be based on index, first to last

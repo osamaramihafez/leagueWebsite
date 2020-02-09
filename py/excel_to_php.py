@@ -178,11 +178,12 @@ def read_waiver(file):
     f = open(file)
     players = f.readlines()
     header = rows[0].split()
-    info = {'Player Name': 0, 'Last': 0, 'Desired Team':} #first name, last name, team,
+    info = {'Player Name': 0, 'Last': 0, 'Desired Team':''} #first name, last name, team,
     for column in range(len(header)):
         if header[column] in info.keys:
             info[header[column]] = column
     for p in range(1, len(players)):
+        #print()
         add_to_team(players[p], info)
 
 
