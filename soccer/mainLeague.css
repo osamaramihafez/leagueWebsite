@@ -1080,7 +1080,7 @@ tr:nth-child(even) {
 }
 
 #bf {
- margin-top: -3%;   
+ margin-top: -2%;   
 }
 
 #whatismaa {
@@ -1284,4 +1284,8 @@ tr:nth-child(even) {
 /*    padding-left: 5%;*/
 /*    border-style: groove;*/
 /*    float: right;*/
+}
+
+hr {
+    margin-bottom: 2%;
 }
