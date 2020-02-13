@@ -4,19 +4,9 @@ import game
 
 class standings:
 
-    def __init__(self):
+    def __init__(self, teams):
         self.order = []
-        self.teams = {}
-        self.team_names = {}
-        self.num_teams = 0
-
-    def add_team(self, team):
-        if team.name not in self.team_names:
-            self.team_names[team.name] = team.name
-            self.teams[team.name] = team
-            self.order.append(team)
-            self.num_teams += 1
-            team.position = self.num_teams
+        self.teams = teams
 
     def result(self, game):
         if game.home_score > game.away_score:
@@ -39,6 +29,8 @@ class standings:
             self.result(game)
 
     def sort_teams(self):
+        for team in self.teams.keys():
+            self.order.append(self.teams[team])
         games = self.order
         for i in range(len(games)):
             for j in range(len(games)):
@@ -48,7 +40,7 @@ class standings:
                     games[i].position = i + 1
 
     def __repr__(self):
-        self.sort_teams()
+        
         table = "<table id='standings'> \n\
     <th class='table_head' colspan='11'> Standings </th> \n\
     <tr id='standings'> \n\
@@ -63,8 +55,7 @@ class standings:
     <th class='ga'>GA</th> \n\
     <th class='gd'>GD</th> \n\
     </tr>\n"
-
-     # <th class='wp'>Win %</th>
+        
         for i in self.order:
             table = table + str(i) + '\n'
         return table

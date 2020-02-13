@@ -3,6 +3,7 @@ from game import game
 from schedule import schedule
 from team import team
 from table import standings
+from division import division
 
 REV_WEEKS = {1:'11-Jan', 2:'18-Jan', 3:'25-Jan', 4:'1-Feb', 5:'8-Feb', 6:'15-Feb', 7:'22-Feb', 8:'29-Feb'}
 WEEKS = {'11-Jan':1, '18-Jan':2, '25-Jan':3, '1-Feb':4, '8-Feb':5, '15-Feb':6, '22-Feb':7, '29-Feb':8}
@@ -45,11 +46,6 @@ WAIVER = 'completed_waivers_jan_23.csv'
 
 TEAMS = {} #I FORGOT IF YOU CAN EDIT GLOBAL VARIABLES IN PYTHON, NEED TO CHECK.
 
-def create_teams(home, away):
-    x, y = team(home), team(away)
-    return x, y
-
-
 def read_excel(file):
     """
     Returns a schedule 's' and standings 'st' based on the excel file that is given
@@ -58,42 +54,30 @@ def read_excel(file):
     rows = f.readlines()
     excel_schedule = rows[22:]
 
-    s = schedule()
-    st = standings()
+    div = division()
 
-    #populate schedule based on comma sperated values
     for row in excel_schedule:
-        game_info = row.split(',')
+        #Parse each row in the excel sheet
         #excel sheet format:
         #Date, Time, Field, Home, Away, hs, -, as
+        game_info = row.split(',')
         week = WEEKS[game_info[0]]
         time = TIMES[game_info[1]]
-        #print(game_info)
-        team_1, team_2 = create_teams(game_info[3], game_info[4])
-        st.add_team(team_1)
-        st.add_team(team_2)
+        home_team = game_info[3]
+        away_team = game_info[4]
+        home_score = game_info[5]
+        away_score = game_info[7]
+        field = game_info[2]
+        
+        team_1, team_2 = div.create_teams(home_team, away_team)
         new_game = game(game_info[3],game_info[4], game_info[5], game_info[7], time, game_info[2], week)
-        st.teams[game_info[3]].add_game(new_game)
-        st.teams[game_info[4]].add_game(new_game)
-        st.update_teams(new_game)
-        s.add(new_game)
+        
+        div.update(new_game)
+    
     f.close()
-    return (s, st)
+    return div
 
 W_FILE = 'new.html'
-
-def print_table():
-    f = read_excel(SCORE_SHEET)
-    s = f[0]
-    st = f[1]
-    x = True
-    print(st)
-    while x == True:
-        if s.currgame != None:
-            print(s.currgame)
-        if s.next_game() == False:
-            x = False
-    s.reset_i()
 
 def write_sched():
     """
@@ -101,12 +85,10 @@ def write_sched():
     WRITE TO THE FILE AT THE CORRECT LOCATION
     WRITE HTML CODE
     """
-    f = read_excel(SCORE_SHEET)
-    s = f[0]
-    st = f[1]
+    div = read_excel(SCORE_SHEET)
 
-    for team in st.team_names:
-        write_to_team(team, st)
+    for team in div.teams.keys:
+        div.write_to_team(team)
 
     x = True
     f = open(W_FILE, 'w+') #is this the correct way to open the file?
@@ -127,53 +109,6 @@ def write_sched():
     f.close()
     s.reset_i()
 
-
-def prepare_name(team_name):
-    tn = team_name.split() #splits by spaces in team name
-    pg = ''
-    for i in tn:
-        i.strip('')
-        x = i.split('.') #splits by . in team name i.e. A.S. Roma
-        for n in x:
-            n.strip('')
-            pg = pg + n
-    return pg
-
-ROSTER_PLAYER_1 = "<tr class='player'> <td><img id='player' src='images/player.jpg'><br/>"
-ROSTER_PLAYER_2 = "</td> \n <td class='goals' >0</td> <td class='assists'>0</td> <td class='yellows'>0</td> <td class='reds'>0</td> </tr> \n"
-TPG_START_1="<!DOCTYPE html>\
-    <html lang='en' dir='ltr'>\
-    <head>\
-    <meta charset='utf-8'>\
-    \n<title>MAA - "
-TPG_START_2 = "</title>\n<link rel='stylesheet' href='css/styles.css'>\n</head>\n<body>\n"
-ROSTER_START="<div class='container'> \n <table>"
-ROSTER_END = "</table> \n\
-        </div> \n\
-    </body> \n\
-</html>\n"
-
-def create_roster(team_name, file):
-    player_name = "Name"
-    bgn = "<h1>" + team_name + "</h1> <tr> <th>Player</th> <th>Goals</th> <th>Assists</th> <th>Yellows<br>(2 mins)</th> <th>Reds</th> </tr>\n"
-    file.write(bgn)
-    for i in range(14): #Replace this for loop with a team roster repr found in the team object
-        file.write(ROSTER_PLAYER_1 + player_name + ROSTER_PLAYER_2)
-    file.write("</table>");
-
-def write_to_team(team_name, st):
-    pg = prepare_name(team_name)
-    team_page = open('../Rosters/' + pg + '.html', 'w+')
-    start = TPG_START_1 + team_name + TPG_START_2 + ROSTER_START #begin the HTML file
-    team_page.write(start)
-    create_roster(team_name, team_page)
-    team_page.write(HTML_SCHED)
-    team = st.teams[team_name] #grab the team instance from the standings
-    team.print_sched(team_page) #print out the schedue for the team
-    team_page.write(ROSTER_END)
-    team_page.close();
-
-
 def read_waiver(file):
     f = open(file)
     players = f.readlines()
@@ -187,5 +122,4 @@ def read_waiver(file):
         add_to_team(players[p], info)
 
 
-#print_table()
 write_sched()

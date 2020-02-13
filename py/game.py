@@ -11,15 +11,9 @@ class game:
         self.away = an #away team name
         self.home_score = hs
         self.away_score = aws
-        self.time = t #time will be 1, 2, 3, 4 not actual times
+        self.time = t #time will be 1, 2, 3, 4 please look at TIMES
         self.field = f
-        self.week = wk #week1, 2, 3...
-
-    #def __repr__(self):
-        ##print(self.week)
-        #return str(self.home) + '\t' + str(self.home_score) + ' - ' + str(self.away_score) + '\t' + str(self.away) \
-        #+  '\t' + str(TIMES[self.time]) + '\t' + 'Field ' + str(self.field) + '\t' + str(WEEKS[self.week]) + '\r\n' \
-        #+ '-'*70
+        self.week = wk #week1, 2, 3... please look at WEEKS
 
     def __repr__(self):
         row = '<tr class=week' + str(self.week) + '>\n'
@@ -36,13 +30,3 @@ class game:
         f = '<td>Field ' + str(self.field) + '</td></tr>\n'
         return row + ht + hs + sep + aws + at + t + f
 
-
-#<tr class='week1'>
-#<td class='team'>A.S. Roma</td>
-#<td class='home_score'>2</td><td>-</td>
-#<td class='away_score'>0</td>
-#<td class='team'>Ricks FC</td>
-#<td>10:45 pm</td>
-#<td>(Saturday)</td>
-#<td>Field 1</td>
-#</tr>
