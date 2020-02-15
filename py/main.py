@@ -65,9 +65,9 @@ ROSTER_END = "</table> \n\
 </html>\n"
 
 SCORE_SHEET = 'week5.csv'
-WAIVER = 'completed_waivers_jan_23.csv'
+PLAYERS = 'players.csv'
 
-OUT_FILE = 'updated_sched.html'
+OUT_FILE = '../soccer/updated_sched.html'
 
 def read_excel(file):
     """
@@ -139,14 +139,11 @@ def write_sched(div):
     f.close()
     s.reset_i()
 
-def read_waiver(file):
+def read_players(file):
     f = open(file)
     players = f.readlines()
     header = rows[0].split()
-    info = {'Player Name': 0, 'Last': 0, 'Desired Team':''} #first name, last name, team,
-    for column in range(len(header)):
-        if header[column] in info.keys:
-            info[header[column]] = column
+    player_info = {'Player Name': 0, 'Last': 0, 'Desired Team':''} #first name, last name, team
     for p in range(1, len(players)):
         #print()
         add_to_team(players[p], info)
