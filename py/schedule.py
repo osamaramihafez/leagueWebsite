@@ -34,34 +34,17 @@ class schedule:
             self.week_i += 1
         elif self.week_i == 8:
             return False
-            # self.game = 1
         else:
             self.currgame = self.sched[self.week_i][self.game_i-1]
             self.game_i += 1
         return True
 
-    def pweek(self):
-        print(self.sched)
-
-    def current_game(self):
-        return self.currgame
-
-    def add(self, game):
+    def add_game(self, game):
         if self.game == 16:
             self.game = 0
             self.week += 1
-            # self.game = 1
-        # week = game.week
-        #print(week)
         self.sched[self.week][self.game] = game
         self.game += 1
-
-    def sort_week(self, week):
-        games = self.sched[week-1]
-        for i in range(len(games)):
-            for j in range(len(games)):
-                if i.time < j.time:
-                    week[i], week[j] = week[j], week[i]
 
     def reset_i(self):
         self.currgame = self.sched[0][0]
