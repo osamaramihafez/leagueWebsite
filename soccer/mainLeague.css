@@ -272,7 +272,7 @@ tr {
 }
 
 .team {
-    width: auto;
+/*    width: auto;*/
 /*    background: rgba(0,0,100,0.2);*/
 }
 
@@ -1288,4 +1288,15 @@ tr:nth-child(even) {
 
 hr {
     margin-bottom: 2%;
+}
+
+
+
+#first {
+    background: rgb(218,165,32);
+}
+
+.player {
+    text-align: left;
+    padding-left: 5%;
 }
