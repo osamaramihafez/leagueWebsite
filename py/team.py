@@ -66,12 +66,12 @@ class team:
             elif last_name in name and name[0] == first_name[0]:
                 self.players[name].set_goals(goals)
                 return
-            elif last_name in name:
-                self.players[name].set_goals(goals)
-                return
-            elif first_name in name:
-                self.players[name].set_goals(goals)
-                return
+            #elif last_name in name:
+                #self.players[name].set_goals(goals)
+                #return
+            #elif first_name in name:
+                #self.players[name].set_goals(goals)
+                #return
             
     def set_pic(self, first_name, last_name, pic):
         for name in self.players.keys():
